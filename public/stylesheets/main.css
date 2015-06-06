@@ -2,4 +2,63 @@
     font-size: inherit;
     font-weight: inherit;
     margin: inherit;
+
+}
+
+.md-toolbar-radiance {
+    font-size: 15px;
+    min-height: 34px;
+    height: 34px;
+}
+
+.radiance-btn {
+    width: 180px;
+
+}
+
+.radiance-logo{
+    height: 58px;
+    width:100px;
+}
+.radiance-logo-container{
+    background-color: snow;
+    border-radius: 4px;
+    height: 62px;
+    width: 150px;
+    padding:2px;
+    margin:2px;
+}
+
+.services-container {
+    border-radius: 4px;
+    margin-bottom: 16px;
+    -webkit-transition: 0.02s padding cubic-bezier(0.35, 0, 0.25, 1);
+    transition: 0.02s padding cubic-bezier(0.35, 0, 0.25, 1);
+    position: relative;
+    padding-bottom: 0;
+    min-height: 400px;
+}
+
+.services-container > md-tabs {
+    border-radius: 0;
+}
+
+.services-content {
+    position: relative;
+    overflow:hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 380px
+}
+
+.services-container .label {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    font-size: 14px;
+    opacity: 0.54;
 }
