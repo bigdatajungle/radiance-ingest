@@ -68,4 +68,13 @@ class dummyapp @Inject() (system: ActorSystem) extends Controller {
   def index = Action {
     Ok(views.html.index("Your new application is ready."))
   }
+
+
+
+  def allservices = Action {
+
+    Ok(views.html.services.service())
+  }
+
+
 }
