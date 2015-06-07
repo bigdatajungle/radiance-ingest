@@ -76,5 +76,10 @@ class dummyapp @Inject() (system: ActorSystem) extends Controller {
     Ok(views.html.services.service())
   }
 
+  def addnewsource = Action {
+
+    Ok(views.html.ingestion.addsource())
+  }
+
 
 }

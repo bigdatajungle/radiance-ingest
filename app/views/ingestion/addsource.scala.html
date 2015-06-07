@@ -1,5 +1,49 @@
 @main("Welcome to Sigmoid") {
-  <div layout="row" layout-margin layout-fill layout-padding>
-    <div flex>I'm on the left, and there's an empty area around me.</div>
-  </div>
+    <div layout="row" layout-margin layout-fill layout-padding>
+        <md-content ng-view="" md-scroll-y="" flex="" layout-padding="" class="ng-scope md-default-theme">
+            <section class="services-container md-whiteframe-z1">
+                <md-toolbar class="demo-toolbar md-primary md-default-theme md-toolbar-radiance md-whiteframe-z1">
+                    <div class="md-toolbar-tools">
+                        <h3 class="ng-binding">Add New Data Source</h3>
+                        <span flex=""></span>
+                    </div>
+                </md-toolbar>
+                    <div layout="row" layout-sm="column" layout-fill style="padding-bottom: 32px;">
+                        <md-whiteframe class="import-icon-div md-whiteframe-z1" flex layout layout-align="center center">
+                            <md-button class="md-fab"><i class="icon-database-alt2 fa-3x"></i></md-button>
+                            <span class="md-caption">CSV,TSV,XML,JSON</span>
+                        </md-whiteframe>
+                        <md-whiteframe class="import-icon-div md-whiteframe-z1" flex layout layout-align="center center">
+                            <md-button class="md-fab">
+                                <i class="icon-hadoop fa-3x"></i>
+                            </md-button><br/>
+                            <span class="md-caption">HDFS</span>
+                        </md-whiteframe>
+                        <md-whiteframe class="import-icon-div md-whiteframe-z1" flex layout layout-align="center center">
+                            <md-button class="md-fab"><i class="icon-aws fa-3x"></i></md-button>
+                                <span class="md-caption">S3</span>
+                        </md-whiteframe>
+                        <md-whiteframe class="import-icon-div md-whiteframe-z1" flex layout layout-align="center center">
+                            <md-button class="md-fab"><i class="icon-antenna fa-3x"></i></md-button>
+                                <span class="md-caption">Kafka</span>
+                        </md-whiteframe>
+                        <md-whiteframe class="import-icon-div md-whiteframe-z1" flex layout layout-align="center center">
+                            <md-button class="md-fab"><i class="fa fa-twitter fa-3x"></i></md-button>
+                                <span class="md-caption">Twitter</span>
+                        </md-whiteframe>
+                    </div>
+                <div layout="row" layout-sm="column" flex layout-fill style="padding-bottom: 32px;">
+
+                    <md-whiteframe class="md-whiteframe-z1" flex layout="row" layout-align="start center">
+                        <md-input-container flex>
+                            <label>Data Source Path</label>
+                            <input ng-model="user.firstName">
+                        </md-input-container>
+                        <md-button class="md-raised md-primary"><i class="fa fa-download"></i> Import</md-button>
+                    </md-whiteframe>
+
+                </div>
+            </section>
+        </md-content>
+    </div>
 }
